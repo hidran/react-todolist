@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+ul.todos, ul.lists{
+  padding: 0;
+  list-style-type: none;
+  min-height: 300px;
+  
+}
+ul.todos li,
+ul.lists li
+{
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px;
+  cursor: pointer;
+  min-width: 250px;
+}
+li:hover span.cross:after{
+  content: '\02A2F';/*cross*/
+  color: red;
+  font-size: 18px;
+  float: right;
+  margin-right: 5px;
+  margin-top:10px;
+ 
+}
+li.completed {
+  text-decoration: line-through;
+  color:red;
+}
+  span.uncomplete:after{
+   content: '\025A1';
+   font-size: 28px;
+   padding: 4px;
+ }
+ span.completed:after{
+  content: '\02713';
+  font-size: 28px;
+  padding: 4px;
+  color: green;
+}
+.container{
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+  border: 0px solid red;
+  align-items: center
+}
+li:last-child{
+  border:0px;
+}
+ul.menu li{
+  display: inline-block;
+  min-width: 120px;
+}
+ul.menu li a {
+  font-size: .95em;
+  color:#fff;
+  padding: 1em;
+  transition: .2s;
+  text-decoration: none;
+}
+
+ul.menu li a:hover,
+ul.menu li a:active
+ {
+  color:#ff0000;
+  padding: 1em;
+  background-color: #3b80d1;
+  text-decoration: underline;
+}
+ul.menu a.active {
+  background-color: #3b80d1;
+  text-decoration: none;
+}
+ul.footer{
+  background-color:transparent;
+}
+ul.footer li{
+  padding: 5px;
+  background-color: #282c34;
+}
+ul.footer li.active{
+  background-color: #3b80d1;
+  color: #fff;
+}
+ul.footer li a:hover{
+  background-color: transparent;
+  text-decoration: none;
+}
+.form, .login {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.form-group {
+  margin: 10px;
+  
+}
+.form-group input{
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+}
+.btn {
+  padding: 5px;
+  background-color: #fff;
+  color: #222;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  min-width: 120px;
+  margin:5px;
+  cursor: pointer;
+}
+.btn-success {
+  background-color: #3b80d1;
+  color:#fff;
+}
+.form-group label{
+  padding: 5px;
+  font-weight: bold;
+}
+.buttons{
+  display: flex;
+  align-items: stretch;
+
+}
+button[type=reset]{
+  background: #fff;
+  color:#222;
+}
